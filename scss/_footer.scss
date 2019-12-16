@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    background-color: $text-color-secondary; 
+    color: $secondary-color;
+    box-shadow: $top-shadow;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        
+        .col{
+            .social-icons{
+                text-align: right;
+                a{
+                    color: $secondary-color;
+                    margin: 0.3rem;
+                }
+            }
+        }
+
+    }
+}

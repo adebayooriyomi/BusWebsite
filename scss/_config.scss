@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+$primary-color: #cc4b4c;
+$secondary-color: #ffffff;
+$text-color-primary: #000000;
+$text-color-secondary: #333;
+$fourth-color: whitesmoke;
+$shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+$shadow-high: 0 8px 12px 0 rgba(0,0,0,0.2);
+$divider-color: #d1d1d1;
+$primaryfont: 'Poppins', sans-serif;
+$button-radius: 30px;
+$box-radius: 8px;
+$top-shadow: 0px -2px 4px -1px rgba(156,156,156,1);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin button-link {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: $button-radius;
+    background-color: gray;
+}
+  
+  
+
+@mixin media {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}
